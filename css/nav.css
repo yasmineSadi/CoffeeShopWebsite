@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+#banner{
+    height: 100vh;
+    background-image: url(../res/images/forest.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   position: relative;
+}
+.navigation{
+    background-color: white ;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    position: fixed;
+    z-index: 999;;
+}
+
+#nav-logo{
+    height: 60px; ;
+    width: auto;
+    margin-left: 60px; ;
+
+    
+}
+.nav-items{
+ list-style: none;
+ margin-left: 60px;
+ display: flex;
+ width: 40%;
+ justify-content: space-evenly;
+ 
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+}
+.main-text-sm{
+    color: orangered ;
+    font: size 2.4em; ;
+    
+}
+.main-text-bg{
+    color: yellow ;
+    font-size: 2.8em;
+}
+.main-text{
+    position: absolute;
+    top: 35%;
+    left: 15%;
+ 
+
+}
+.main-btn{
+    color:white ;
+    background-color:transparent ;
+    border: solid 2px #e4252f;
+    width: 150px;
+    height: 45px;
+    margin: 15px 0;
+}
+
+.main-btn:hover{
+    background-color:#e4252ed0;
+}
+
+#products{
+    height: 200vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.prod-card img{
+    height: auto;
+    width: 300px;
+}
+.prod-card{
+    background-color: white;
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    
+}
+.prod-img{
+    height: 300px;
+    width: 300px;
+    background-image: url(../res/images/cofe.jpg);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: left;
+     border: top left radius 20px;
+    border-top-right-radius: 20px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 300px); 
+    gap: 10px;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+    .grid{
+        grid-template-columns: repeat(2, 300px); 
+    }
+    #products{
+        height: 200vh;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .nav-items{
+        width: 60%;
+       }
+
+       .main-text{
+        top: 35%;
+        left: 15%;
+    }
+    .grid{
+        grid-template-columns: repeat(2, 300px); 
+    }
+    #products{
+        height: 200vh;
+    }
+}
+@media screen and (max-width: 400px) {
+    .nav-items{
+        width: 60%;
+       }
+
+       .main-text{
+        top: 35%;
+        left: 15%;
+    }
+    .grid{
+        grid-template-columns: repeat(2, 300px); 
+    }
+    #products{
+        height: 200vh;
+    }
+}
